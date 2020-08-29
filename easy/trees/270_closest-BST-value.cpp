@@ -1,6 +1,8 @@
-using namespace std;
+#include <iostream>
+#include <stdlib.h>
 
-struct TreeNode {
+struct TreeNode
+{
     int val;
     TreeNode *left;
     TreeNode *right;
@@ -49,6 +51,6 @@ int helper(TreeNode* root, double target, int closest)
 
 int closestValue(TreeNode* root, double target)
 {
-    cout << closer(5, 1, 2) << endl;
+    std::cout << closer(5, 1, 2) << std::endl;
     return helper(root, target, root->val);
 }
