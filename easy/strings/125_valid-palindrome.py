@@ -1,4 +1,6 @@
 def isPalindrome(self, s: str) -> bool:
+    # using a functional, "Pythonic" approach
+    
     # filter out all characters for whom .isalnum() returned False
     alnum_only = list(filter(lambda x: x.isalnum(), [c for c in s]))        
     # lower case all letters
